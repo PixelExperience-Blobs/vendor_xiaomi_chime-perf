@@ -18,6 +18,10 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf/,$(TARGET_COPY_OUT_VENDOR)/etc/perf) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/lm/,$(TARGET_COPY_OUT_VENDOR)/etc/lm) \
 
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksResPerf
+
 # Packages
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0 \
