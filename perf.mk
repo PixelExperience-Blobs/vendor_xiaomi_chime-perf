@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
     libtflite \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/permissions/,$(TARGET_COPY_OUT_SYSTEM)/etc/permissions)
+
 # Properties
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.perf-hal.ver=2.2 \
